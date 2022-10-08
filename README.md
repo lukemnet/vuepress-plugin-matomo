@@ -2,7 +2,7 @@
 
 Allows Matomo access tracking on VuePress.
 
-This project is an independently maintained fork of [vuepress-plugin-matomo](https://github.com/qdot/vuepress-plugin-matomo) intended to keep compatibility with future VuePress versions.
+This project is an independently maintained fork of [vuepress-plugin-matomo](https://github.com/qdot/vuepress-plugin-matomo) intended to keep compatibility with future versions of VuePress and Matomo.
 
 This project takes many ideas from
 [vue-matomo](https://github.com/AmazingDreams/vue-matomo/), but tries
@@ -11,13 +11,13 @@ to make them SSR friendly for vuepress usage.
 ## Installation
 
 ```bash
-npm install vuepress-plugin-matomo
+npm install @lukemnet/vuepress-plugin-matomo
 ```
 
 or
 
 ```bash
-yarn add vuepress-plugin-matomo
+yarn add @lukemnet/vuepress-plugin-matomo
 ```
 
 ## VuePress Setup
@@ -29,7 +29,7 @@ Add the following block to the plugins array of your _config.js_ file.
   plugins: [
     // ... other plugins...
     [
-      "vuepress-plugin-matomo":
+      "@lukemnet/vuepress-plugin-matomo":
       {
         'siteId': 1,
         'trackerUrl': "https://my.matomo.url.here/"
@@ -40,7 +40,7 @@ Add the following block to the plugins array of your _config.js_ file.
 // ...
 ```
 
-Also [see vuepress' plugin page](https://vuepress.vuejs.org/plugin/using-a-plugin.html). This plugin uses [babel-style options](https://vuepress.vuejs.org/plugin/using-a-plugin.html#plugin-options) for configuration.
+Also [see VuePress plugin page](https://vuepress.vuejs.org/plugin/using-a-plugin.html). This plugin uses [babel-style options](https://vuepress.vuejs.org/plugin/using-a-plugin.html#plugin-options) for configuration.
 
 ## Plugin Options
 
